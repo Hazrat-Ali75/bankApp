@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+    <section class="max-w-md  mx-auto  bg-slate-100 relative py-6">
+      <header class="w-[90%] mx-auto">
+        <nav class="flex justify-between items-center ">
+            <div class="flex items-center gap-1">
+                <img class="w-[50px] h-[50px]" src="practiceProject/asset/Group.png" alt="">
+                <div>
+                    <p class="font-bold text-[25px] text-black">$ <span id="mainBal" class="">4500</span></p>
+                    <p>Available Balance</p>
+                </div>
+            </div>
+            <div>
+                <button class="btn bg-slate-100 border-gray-300"><i class="rotate-180 fa-solid fa-right-from-bracket "></i> Log Out</button>
+            </div>
+        </nav>
+      </header>
+      <main>
+        <div class="h-[1px] bg-slate-300 mt-2 w-[100%]"></div>
+        <div class="w-[90%] mx-auto mt-6">
+          <h1 class="text-[30px] text-black font-medium">🔥Welcome to Payooo!</h1>
+          <p>Enjoy easy and convenient financial services with us.
+            Cashout charge is low and
+          </p>
+          <div class="grid grid-cols-3 mt-5 gap-3">
+            <div id="add-money" class="bg-slate-200 p-4 border-[1px] border-gray-400 rounded-xl flex flex-col items-center justify-center cursor-pointer">
+                <img class="w-[30px]" src="practiceProject/asset/wallet1.png" alt="">
+                <p>Add Money</p>
+            </div>
+            <div id="cash-out" class="bg-slate-200 p-4 border-[1px] border-gray-400 rounded-xl flex flex-col items-center justify-center cursor-pointer">
+                <img class="w-[30px]" src="practiceProject/asset/money1.png" alt="">
+                <p>Cashout</p>
+            </div>
+            <div class="bg-slate-200 p-4 border-[1px] border-gray-400 rounded-xl flex flex-col items-center justify-center cursor-pointer">
+                <img class="w-[30px]" src="practiceProject/asset/purse1.png" alt="">
+                <p class="text-[12px] font-medium">Transfer Money</p>
+            </div>
+            <div class="bg-slate-200 p-4 border-[1px] border-gray-400 rounded-xl flex flex-col items-center justify-center cursor-pointer">
+                <img class="w-[30px]" src="practiceProject/asset/bonus1.png" alt="">
+                <p>Get Bonus</p>
+            </div>
+            <div class="bg-slate-200 p-4 border-[1px] border-gray-400 rounded-xl flex flex-col items-center justify-center cursor-pointer">
+                <img class="w-[30px]" src="practiceProject/asset/send1.png" alt="">
+                <p>Pay Bill</p>
+            </div>
+            <div id="trasc" class="bg-slate-200 p-4 border-[1px] border-gray-400 rounded-xl flex flex-col items-center justify-center cursor-pointer">
+                <img class="w-[30px]" src="practiceProject/asset/transaction1.png" alt="">
+                <p>Transaction</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <section id="addMoney" class="mt-9 bg-slate-200 ">
+          <h1 class="py-4 ml-10 text-[20px]">Add Money</h1>
+        <div class="  ">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="card  w-[90%] max-w-sm shrink-0 shadow-[25px]">
+                    <form class="card-body bg-slate-100 rounded-[25px]">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="font-medium">Select a Bank</span>
+                            </label>
+                            <select class="select select-bordered w-full max-w-xs bg-slate-200 outline-none rounded-[20px]">
+                                <option selected>Bkash</option>
+                                <option>Nagad</option>
+                                <option>Rocket</option>
+                            </select>
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="font-medium">Mobile Number</span>
+                            </label>
+                            <input id="accountNum" type="number" placeholder="Enter your number"
+                                class="bg-slate-200 p-3 rounded-[20px] outline-none text-black" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="font-medium">Amount to Add</span>
+                            </label>
+                            <input id="amount" type="number" placeholder="Add Amount to withdraw"
+                                class="bg-slate-200 p-3 rounded-[20px] outline-none text-black" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="font-medium">Pin</span>
+                            </label>
+                            <input id="pin" type="number" placeholder="Enter 4 digit pin"
+                                class="bg-slate-200 p-3 rounded-[20px] outline-none text-black" required />
+                        </div>
+                        <div class="form-control mt-6">
+                            <button id="btn" class="bg-blue-500 p-3 rounded-[20px] text-white font-semibold">Add Money</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cashOut" class="mt-9 bg-slate-200 ">
+        <h1 class="py-4 ml-10 text-[20px]">Cashout</h1>
+        <div class="  ">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="card  w-[90%] max-w-sm shrink-0 shadow-[25px]">
+                    <form class="card-body bg-slate-100 rounded-[25px]">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="font-medium">Agent Number</span>
+                            </label>
+                            <input id="cashout-accountNum" type="number" placeholder="Enter agent number"
+                                class="bg-slate-200 p-3 rounded-[20px] outline-none text-black" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="font-medium">Amount to Cashout</span>
+                            </label>
+                            <input id="cashout-amount" type="number" placeholder="Enter Amount"
+                                class="bg-slate-200 p-3 rounded-[20px] outline-none text-black" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="font-medium">Pin</span>
+                            </label>
+                            <input id="cashout-pin" type="number" placeholder="Enter 4 digit pin"
+                                class="bg-slate-200 p-3 rounded-[20px] outline-none text-black" required />
+                        </div>
+                        <div class="form-control mt-6">
+                            <button id="cashout-btn" class="bg-blue-500 p-3 rounded-[20px] text-white font-semibold">Withdraw Money</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="transaction" class="mt-9 bg-slate-200 min-h-screen">
+         <div id="trxContainer" class=""></div>
+    </section>
+    </section>
+    <script src="/practiceProject/script/add.js"></script>
+    <script src="/practiceProject/script/withdraw.js"></script>
+    <script src="/practiceProject/utilities/toggle.js"></script>
+    <script src="/practiceProject/utilities/utilities.js"></script>
+</body>
+</html>

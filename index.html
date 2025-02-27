@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="max-w-md min-h-screen mx-auto p-8 bg-slate-100 relative">
+        <nav class="absolute top-10 left-[100px]">
+            <div class="flex flex-col justify-center items-center">
+                <img class="w-[250px]" src="practiceProject/asset/bg.png" alt="">
+                <img class=" w-[70px] absolute top-9" src="practiceProject/asset/Group.png" alt="">
+            </div>
+        </nav>
+        <div class=" absolute top-[180px] ">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="card  w-[350px] max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body bg-slate-100 rounded-[25px]">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="font-medium">Mobile Number</span>
+                            </label>
+                            <input id="accountNum" type="number" placeholder="Enter your number" class="bg-slate-200 p-3 rounded-[20px] outline-none text-black" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="font-medium">Pin</span>
+                            </label>
+                            <input id="pin" type="number" placeholder="Enter 4 digit pin" class="bg-slate-200 p-3 rounded-[20px] outline-none text-black" required />
+                        </div>
+                        <div class="form-control mt-6">
+                            <button id="btn" class="bg-blue-500 p-3 rounded-[20px] text-white font-semibold">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/practiceProject/script/login.js"></script>
+    <script src="/practiceProject/utilities/utilities.js"></script>
+</body>
+</html>
