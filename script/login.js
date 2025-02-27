@@ -4,7 +4,7 @@ document.getElementById('btn').addEventListener('click',function(event){
     const pin = getInputValueById("pin");
     if(accountNum.length === 11){
         if(pin === 1234){
-            window.location.href = '/practiceProject/main.html';
+            window.location.href = 'main.html';
         }
         else{
             alert('Enter correct pin');
